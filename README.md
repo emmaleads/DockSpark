@@ -17,7 +17,7 @@
 ## 📦 Installation
 
 ### Option 1: Standalone `.exe` (No Python Required)
-1. Download **DockSpark.exe** from the [Releases](https://github.com/emmaleads/DockSpark.exe) section.
+1. Download **DockSpark.exe** from the [Releases](https://github.com/emmaleads/DockSpark/blob/main/DockSpark.exe) section.
 2. Install dependencies:
    - [AutoDock Vina](http://vina.scripps.edu) *(Add to PATH)*
    - [Open Babel](https://openbabel.org) *(Add to PATH)*
