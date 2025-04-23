@@ -6,7 +6,7 @@
 
 ## 🧬 Features
 
-- **Receptor-Ligand Docking** using AutoDock Vina
+- **Receptor-Ligand Docking** using AutoDock Vina ** (PDBQT format only)
 - **File Format Conversion**: PDB, PDBQT, SDF, MOL2
 - **Energy Minimization**: MMFF94, UFF, GAFF
 - **Results Visualization**: Affinity scores, RMSD, export options
