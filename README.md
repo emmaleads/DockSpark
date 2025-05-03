@@ -1,35 +1,69 @@
-# 🚀 DockSpark - Molecular Docking Application
+# DockSpark - AutoDock Vina Docking Tool
 
-**DockSpark** is a graphical user interface (GUI) application designed to streamline molecular docking workflows using **AutoDock Vina** and **Open Babel**. It offers a user-friendly interface for receptor-ligand docking, file format conversion, energy minimization, and result visualization.
+## Description
 
----
+DockSpark is a user-friendly graphical interface for performing molecular docking using AutoDock Vina. It allows users to easily select ligand and receptor files, set docking parameters, run the docking simulations, and view/export the results.
 
-## 🧬 Features
+## Features
 
-- **Receptor-Ligand Docking** using AutoDock Vina (PDBQT format only)
-- **File Format Conversion**: PDB, PDBQT, SDF, MOL2
-- **Energy Minimization**: MMFF94, UFF, GAFF
-- **Results Visualization**: Affinity scores, RMSD, export options
-- **Standalone EXE and Python Script Available**
+* Graphical user interface for AutoDock Vina.
+* Ligand and receptor selection.
+* Docking parameter configuration.
+* Docking execution.
+* Results table.
+* Export results to CSV.
 
----
+## Requirements
 
-## 📦 Installation
+DockSpark comes bundled with all the necessary external tools to run on a **Windows** system. Simply extract the contents of the `DockSpark.zip` file to a folder on your computer.
 
-### Option 1: Standalone `.exe` (No Python Required)
-1. Download **DockSpark.exe** from the [Releases](https://github.com/emmaleads/DockSpark/blob/main/DockSpark.exe) section.
-2. Install dependencies:
-   - [AutoDock Vina](http://vina.scripps.edu) *(Add to PATH)*
-   - [Open Babel](https://openbabel.org) *(Add to PATH)*
-   - [MGLTools (optional)](https://ccsb.scripps.edu/mgltools)
-3. Double-click `DockSpark.exe` to run.
+## Directory Structure
 
-> If blocked by Windows Defender: Click **More Info → Run Anyway**
+The extracted folder should have the following structure:
 
----
+```
+DockSpark/
+├── DockSpark.py
+├── README.md
+├── vina/
+│   └── vina.exe
+├── babel/
+│   └── obabel.exe
+└── MGLTools/
+    ├── python.exe
+    └── Lib/
+    └── site-packages/
+    └── AutoDockTools/
+        └── Utilities24/
+            ├── prepare_ligand4.py
+            └── prepare_receptor4.py
+        └── ... (other MGLTools files)
+```
 
-### Option 2: Python Version (`dockspark.py`)
-1. Install [Python 3.7+](https://www.python.org/downloads) (64-bit recommended).
-2. Install required packages:
-```bash
-pip install numpy openbabel tk
+
+
+## How to Use
+
+1.  **Download and Extract:** Download the `DockSpark.zip` file and extract its contents to a folder on your computer.
+2.  **Run DockSpark:** Open a terminal or command prompt, navigate to the extracted folder, and run the application using the command:
+    ```bash
+    python DockSpark.py
+    ```
+3.  **Select Ligands:** Click the "Select Ligands" button and choose one or more ligand files in `.mol2` or `.sdf` format.
+4.  **Select Receptor:** Click the "Select Receptor" button and choose a receptor file in `.pdb` format.
+5.  **Set Docking Parameters:** Enter the center coordinates (X, Y, Z) and grid size (X, Y, Z) for the docking box.
+6.  **Run Docking:** Click the "Run Docking" button to start the simulation.
+7.  **View Results:** Once the docking is complete, the results (Ligand, Mode, Affinity, RMSD) will be displayed in the "DockingResults" table.
+8.  **Export Results:** Click the "Export to CSV" button to save the docking results.
+
+## Important Notes
+
+* This package is configured to run on **Windows** systems as it includes the `.exe` executables for AutoDock Vina and Open Babel.
+* Ensure that you maintain the directory structure within the extracted `DockSpark` folder for the application to find the necessary executables and scripts.
+* Molecular docking can be computationally intensive.
+* **macOS and Linux Users:** This bundled version is primarily for Windows. To run DockSpark on macOS or Linux, you will need to:
+    * Obtain the appropriate executables for AutoDock Vina and Open Babel for your operating system and place them in the `vina` and `babel` subdirectories, respectively.
+    * Ensure you have MGLTools installed and that the paths within the `DockSpark.py` script (`ADT_PYTHON`, `PREP_LIGAND`, `PREP_RECEPTOR`) correctly point to your MGLTools installation.  You may need to modify these paths in the code.
+    * ## Support
+
+For any issues or questions, please feel free to contact [Emmanuel/segungab98@gmail.com]
