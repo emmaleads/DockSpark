@@ -14,8 +14,9 @@ DockSpark is a user-friendly graphical interface for performing molecular dockin
 * Export results to CSV.
 
 ## Requirements
-
-DockSpark comes bundled with all the necessary external tools to run on a **Windows** system. Simply extract the contents of the `DockSpark.zip` file to a folder on your computer.
+Operating System: Windows
+Python: Python 3.6 or higher must be installed
+No installation needed – Simply extract and run the app from terminal
 
 ## Directory Structure
 
@@ -39,7 +40,6 @@ DockSpark/
             └── prepare_receptor4.py
         └── ... (other MGLTools files)
 ```
-
 
 
 ## How to Use
