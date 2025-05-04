@@ -1,3 +1,1 @@
-numpy
-openbabel
-tk
+python
