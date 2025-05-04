@@ -14,9 +14,9 @@ DockSpark is a user-friendly graphical interface for performing molecular dockin
 * Export results to CSV.
 
 ## Requirements
-Operating System: Windows
-Python: Python 3.6 or higher must be installed
-No installation needed – Simply extract and run the app from terminal
+*  Operating System: Windows
+* Python: Python 3.6 or higher must be installed
+* No installation needed – Simply extract and run the app from terminal
 
 ## Directory Structure
 
